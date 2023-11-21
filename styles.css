@@ -1,0 +1,163 @@
+body {
+    font-size: 16px;
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/back.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+h1, h2{
+    margin-left: 30px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 0;
+    font-size: 1.5em;
+}
+
+
+.featured {
+    margin: 0 auto; 
+    font-size: 1.2em;
+}
+
+/* Styling for form textfields */
+form input[type="text"], form textarea {
+  border: 2px solid red;
+}
+
+article {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.text {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.3)
+
+}
+.technical .author, .techauthor {
+    background-color: black;
+    color: white;
+}
+
+.career .author, .careerauthor {
+    background-color: purple;
+    color: white;
+}
+
+
+header {
+    top: 0; 
+}
+
+footer {
+    bottom: 0; 
+}
+
+main {
+    padding-top: 200px;
+    margin-bottom: 150px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Red border for all required text fields in the contact form on desktop */
+input[required], textarea[required] {
+    border: 1px solid red;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 50px; /* Set the desired width */
+
+    }
+
+    .featured {
+        width: 80%;
+    }
+
+    main {
+        font-size: 2em;
+
+        padding-top: 130px; /* Adjust for fixed header and logo size */
+    }
+    p{
+        font-size: 1em;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 601px) {
+    .featured {
+        width: 80%;
+        margin: 0 auto; 
+
+    }
+
+    
+    header, footer {
+        
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        color: grey;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Align items in a column */
+
+        
+    }
+    .logo{
+        width: 120px;
+    }
+    .category {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+        grid-gap: 10px; /* Adjust the gap between items */
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        border: 3px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.2)
+    
+    }
+
+
+}
